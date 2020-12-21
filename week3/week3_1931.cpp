@@ -11,7 +11,6 @@ bool cmp(const pair<int,int>&a, const pair<int,int>&b){
     }else{
         return a.second < b.second;
     }
-
 }
 
 
@@ -28,8 +27,6 @@ int main(){
     //1 . sort by ending time.
     sort(meeting, meeting+N, cmp);
 
-
-/*
     //2. count
     for (int i = 0; i < N ; i++){
         if( pos<= meeting[i].first){
@@ -37,11 +34,8 @@ int main(){
             cnt++;
         }
     }
-*/    
-    for (int i = 0; i < N ; i++){
-        cout<<meeting[i].first<<" "<<meeting[i].second<<'\n';
-    }
 
-    // cout<<cnt<<'\n';
+
+    cout<<cnt<<'\n';
     return 0;
 }
